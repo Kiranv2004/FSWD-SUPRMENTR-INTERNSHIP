@@ -1,0 +1,133 @@
+.task-input-container {
+  margin-bottom: 2rem;
+}
+
+.task-input-form {
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.task-input {
+  flex: 1;
+  padding: 0.875rem 1.25rem;
+  border: 2px solid var(--neutral-300);
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: var(--white);
+  color: var(--neutral-900);
+  box-shadow: var(--shadow-sm);
+}
+
+.dark .task-input {
+  background: var(--neutral-700);
+  border-color: var(--neutral-600);
+  color: var(--neutral-50);
+}
+
+.task-input::placeholder {
+  color: var(--neutral-400);
+}
+
+.dark .task-input::placeholder {
+  color: var(--neutral-500);
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-md), 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+.dark .task-input:focus {
+  border-color: var(--primary-light);
+  box-shadow: var(--shadow-md), 0 0 0 2px rgba(129, 140, 248, 0.1);
+}
+
+.task-input.focused {
+  border-color: var(--primary-color);
+}
+
+.add-button {
+  padding: 0.875rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: white;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.add-button:active {
+  transform: translateY(0);
+}
+
+.add-button span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.add-button:hover span {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.char-count {
+  font-size: 0.75rem;
+  color: var(--neutral-500);
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.dark .char-count {
+  color: var(--neutral-400);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .input-wrapper {
+    gap: 0.5rem;
+  }
+
+  .task-input {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .add-button {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-wrapper {
+    flex-direction: column;
+  }
+
+  .task-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .add-button {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+  }
+}

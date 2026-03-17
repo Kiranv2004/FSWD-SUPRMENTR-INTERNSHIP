@@ -1,0 +1,149 @@
+.mood-selector {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  text-align: center;
+}
+
+.mood-question {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.5px;
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  width: 100%;
+  place-items: center;
+}
+
+.mood-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 30px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(10px);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  min-width: 110px;
+  aspect-ratio: 1;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.mood-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.mood-card.active {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.mood-emoji {
+  font-size: 48px;
+  display: inline-block;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.mood-label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.mood-indicator {
+  position: absolute;
+  bottom: 5px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Dark Mode */
+.app.dark-mode .mood-card {
+  background: rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.app.dark-mode .mood-card:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.app.dark-mode .mood-card.active {
+  background: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+  .mood-question {
+    font-size: 24px;
+  }
+
+  .mood-grid {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 15px;
+  }
+
+  .mood-card {
+    padding: 20px 15px;
+    min-width: 90px;
+    border-radius: 16px;
+  }
+
+  .mood-emoji {
+    font-size: 40px;
+  }
+
+  .mood-label {
+    font-size: 12px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .mood-question {
+    font-size: 20px;
+  }
+
+  .mood-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .mood-card {
+    padding: 15px 10px;
+    min-width: 70px;
+    border-radius: 14px;
+    gap: 8px;
+  }
+
+  .mood-emoji {
+    font-size: 32px;
+  }
+
+  .mood-label {
+    font-size: 11px;
+  }
+}
