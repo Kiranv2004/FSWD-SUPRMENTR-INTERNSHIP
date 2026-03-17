@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kiran V • Computer Science Student</title>
+		<style>
+			:root {
+				font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+				color: #0d1b2a;
+				background: #f4f6fb;
+				--accent: #1b77f2;
+				--card-bg: #ffffff;
+				--muted: #58627a;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				padding: 24px;
+				background: radial-gradient(circle at top right, #d5e4ff, transparent 45%), #f4f6fb;
+			}
+
+			main {
+				max-width: 980px;
+				margin: 0 auto;
+				padding: 32px;
+				background: var(--card-bg);
+				border-radius: 24px;
+				box-shadow: 0 25px 60px rgba(13, 27, 42, 0.15);
+			}
+
+			header {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				gap: 16px;
+				border-bottom: 1px solid #e1e7f2;
+				padding-bottom: 24px;
+				margin-bottom: 28px;
+			}
+
+			h1 {
+				margin: 0;
+				font-size: 2.5rem;
+				letter-spacing: -0.5px;
+			}
+
+			p {
+				margin: 0;
+				line-height: 1.6;
+				color: var(--muted);
+			}
+
+			.tagline {
+				font-size: 1.1rem;
+				color: var(--accent);
+				letter-spacing: 0.5px;
+				margin-bottom: 6px;
+			}
+
+			.section {
+				margin-bottom: 32px;
+			}
+
+			.grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 22px;
+			}
+
+			.card {
+				background: #f8f9ff;
+				padding: 18px;
+				border-radius: 16px;
+				border: 1px solid #eaedf7;
+				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+			}
+
+			.section-title {
+				font-weight: 600;
+				margin-bottom: 12px;
+				color: #0b1730;
+			}
+
+			.project-item,
+			.timeline-item {
+				margin-bottom: 16px;
+			}
+
+			.project-item:last-child,
+			.timeline-item:last-child {
+				margin-bottom: 0;
+			}
+
+			.btn-ghost {
+				display: inline-flex;
+				align-items: center;
+				gap: 6px;
+				padding: 10px 18px;
+				border-radius: 999px;
+				border: 1px solid var(--accent);
+				color: var(--accent);
+				text-decoration: none;
+				transition: background 0.2s ease;
+			}
+
+			.btn-ghost:hover {
+				background: rgba(27, 119, 242, 0.12);
+			}
+
+			.footer-note {
+				text-align: center;
+				font-size: 0.9rem;
+				color: var(--muted);
+				margin-top: 32px;
+			}
+
+			a {
+				color: var(--accent);
+			}
+
+			.light-list {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.light-list li {
+				margin-bottom: 6px;
+			}
+
+			.contact-grid .card strong {
+				display: block;
+				margin-bottom: 6px;
+				font-size: 0.95rem;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<header>
+				<div>
+					<h1>Kiran V</h1>
+					<div class="tagline">Computer Science Engineering Student</div>
+					<p>
+						Objective: Computer Science Engineering student with strong interest in software development,
+						artificial intelligence, and web technologies. Seeking an entry-level role to apply programming
+						skills and build real-world, scalable systems.
+					</p>
+				</div>
+				<div style="align-self: flex-end">
+					<a class="btn-ghost" href="Kiran_V.pdf" download>
+						Download PDF CV
+					</a>
+				</div>
+			</header>
+
+			<section class="section">
+				<div class="section-title">Contact</div>
+				<div class="grid contact-grid">
+					<div class="card">
+						<strong>Email</strong>
+						<p>
+							<a href="mailto:kiranv20042@gmail.com">kiranv20042@gmail.com</a>
+						</p>
+					</div>
+					<div class="card">
+						<strong>Phone</strong>
+						<p>+91 9110655575</p>
+					</div>
+					<div class="card">
+						<strong>Location</strong>
+						<p>Mallandahalli, Kolar, Karnataka, India</p>
+					</div>
+					<div class="card">
+						<strong>LinkedIn</strong>
+						<p>
+							<a href="https://linkedin.com/in/kiran-v-4b1384281" target="_blank" rel="noreferrer">
+								linkedin.com/in/kiran-v-4b1384281
+							</a>
+						</p>
+					</div>
+					<div class="card">
+						<strong>GitHub</strong>
+						<p>
+							<a href="https://github.com/Kiranv2004" target="_blank" rel="noreferrer">
+								github.com/Kiranv2004
+							</a>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="section-title">Education & Credentials</div>
+				<div class="card">
+					<div class="timeline-item">
+						<strong>Bachelor of Engineering in Computer Science and Engineering</strong>
+						<p style="font-size: 0.9rem; color: var(--muted)">
+							2022 – 2026 · Sri Venkateshwara College of Engineering, Bengaluru • CGPA: 8.62 / 10
+						</p>
+					</div>
+					<div class="timeline-item">
+						<strong>Pre-University (PCMB)</strong>
+						<p style="font-size: 0.9rem; color: var(--muted)">2022 · Vidya Jyothi PU College · 82.83%</p>
+					</div>
+					<div class="timeline-item">
+						<strong>Secondary School</strong>
+						<p style="font-size: 0.9rem; color: var(--muted)">2020 · Chinmaya Grameena Vidyalaya · 92.8%</p>
+					</div>
+				</div>
+				<div class="grid" style="margin-top: 16px;">
+					<div class="card">
+						<strong>Certifications</strong>
+						<ul class="light-list">
+							<li>Google AI Essentials – Coursera</li>
+							<li>Python for Data Science – IBM</li>
+							<li>IR4.0 Foundation course – Tech Saksham</li>
+							<li>Python – GUVI</li>
+							<li>Responsive Web Design – Infosys Springboard</li>
+						</ul>
+					</div>
+					<div class="card">
+						<strong>Achievements</strong>
+						<ul class="light-list">
+							<li>Fluxus 2025 (IIT Indore) – Finalist (Face Recognition System)</li>
+							<li>Smart India Hackathon (SIH) 2025 – Participant</li>
+							<li>CodeCarnage – 24-Hour Hackathon – Participant</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="section-title">Technical Skills</div>
+				<div class="grid">
+					<div class="card">
+						<strong>Programming Languages</strong>
+						<p>Python, Java, C, SQL</p>
+					</div>
+					<div class="card">
+						<strong>Web & Databases</strong>
+						<p>HTML, CSS, JavaScript, MySQL, MongoDB</p>
+					</div>
+					<div class="card">
+						<strong>Version Control</strong>
+						<p>Git, GitHub</p>
+					</div>
+					<div class="card">
+						<strong>Languages</strong>
+						<p>Kannada, English, Telugu, Hindi</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="section-title">Academic Projects</div>
+				<div class="card">
+					<div class="project-item">
+						<strong>AI-Based Student Attendance System</strong>
+						<p>
+							Built a real-time attendance system that captures facial encodings via face_recognition
+							and dlib, applies MiniFASNet anti-spoofing plus MediaPipe mask-aware detection, and
+							sends automated email alerts after logging attendance via Euclidean-distance matching.
+						</p>
+					</div>
+					<div class="project-item">
+						<strong>Carbon Footprint Analysis and Neutrality Pathways for Indian Coal Mines</strong>
+						<p>
+							Designed a web dashboard with HTML, CSS, and JavaScript backed by MySQL to model carbon
+							emissions, present reporting, and propose renewable and optimization-based neutrality routes.
+						</p>
+					</div>
+					<div class="project-item">
+						<strong>Blockchain-Based Voting System</strong>
+						<p>
+							Implemented a decentralized voting platform using Solidity smart contracts on Ethereum,
+							Ganache, and MetaMask to enforce one-vote-per-address with cryptographic hashing for tamper resistance.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer-note">
+				Resume mirror ready—update any section further as your story evolves and print or upload from here.
+			</footer>
+		</main>
+	</body>
+</html>
