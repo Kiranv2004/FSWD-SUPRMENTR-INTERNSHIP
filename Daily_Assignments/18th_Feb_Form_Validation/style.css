@@ -1,0 +1,91 @@
+/* Basic page reset and font setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the form on the page */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f8;
+}
+
+/* Form container styling */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333333;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #4a90e2;
+}
+
+/* Error message text (shown below each input) */
+.error-message {
+  display: block;
+  min-height: 18px;
+  margin-top: 4px;
+  color: #d93025;
+  font-size: 12px;
+}
+
+/* Highlight input when there is a validation error */
+.input-error {
+  border-color: #d93025;
+  background-color: #fff2f2;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357abf;
+}

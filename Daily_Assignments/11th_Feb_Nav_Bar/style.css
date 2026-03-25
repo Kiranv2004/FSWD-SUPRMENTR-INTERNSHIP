@@ -1,0 +1,94 @@
+/* Basic page setup */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+}
+
+/* Navbar container */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+/* Menu list (horizontal by default for desktop) */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Menu items spacing */
+.nav-links li {
+  margin: 0 12px;
+}
+
+/* Link styling */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* Simple hover effect */
+.nav-links a:hover {
+  background-color: #555;
+}
+
+/* Content section below navbar */
+.content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.content h1 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.content p {
+  color: #444;
+}
+
+/* Simple cards layout */
+.cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  flex: 1;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+/* Mobile view: make menu vertical */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 6px 0;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
